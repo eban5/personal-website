@@ -49,6 +49,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    padding-left: 10px;
 }
 
 a:hover,
@@ -148,6 +149,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    /* background: url(../img/intro_bkg_europe.jpg) no-repeat bottom center scroll; */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -370,6 +372,29 @@ footer p {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
+}
+
+div.list-row{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  div.list-cell{
+    flex-grow: 1;
+    padding: 0 40px;
+    font-size: 24px;
+  }
+}
+
+.fa-fw {
+    padding-right: 20px;
+}
+
+img {
+    padding: 15px;
 }
 
 img::selection {
