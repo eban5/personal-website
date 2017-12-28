@@ -1,3 +1,7 @@
 #Redirect domain aliases to primary domain
 https://estebanamas.me/* https://www.estebanamas.codes/:splat 301!
 http://estebanamas.me/* https://www.estebanamas.codes/:splat 301!
+https://estebanamas.codes/* https://www.estebanamas.codes/:splat 301!
+http://estebanamas.codes/* https://www.estebanamas.codes/:splat 301!
+https://estebanamas.netlify.com/* https://www.estebanamas.codes/:splat 301!
+http://estebanamas.netlify.com/* https://www.estebanamas.codes/:splat 301!
