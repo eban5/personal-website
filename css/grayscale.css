@@ -49,7 +49,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    padding-left: 10px;
+    // padding-left: 10px;
 }
 
 a:hover,
@@ -146,7 +146,7 @@ a:focus {
     width: 100%;
     height: auto;
     padding: 100px 0;
-    text-align: center;
+    // text-align: center;
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     /* background: url(../img/intro_bkg_europe.jpg) no-repeat bottom center scroll; */
@@ -163,11 +163,21 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+}
+
+.intro .intro-body .intro-para {
+    text-align: justify;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.intro .intro-body .intro-para .emph {
+    color: #42dca3;
 }
 
 @media(min-width:768px) {
@@ -177,11 +187,14 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 85px;
     }
 
     .intro .intro-body .intro-text {
         font-size: 26px;
+    }
+    .intro .intro-body .intro-para {
+        font-size: 20px;
     }
 }
 
@@ -376,6 +389,7 @@ footer p {
 
 .fa-fw {
     padding-right: 20px;
+    font-size: 45px;
 }
 
 .img-responsive {
