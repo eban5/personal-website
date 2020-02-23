@@ -18,11 +18,12 @@
 	-o-background-size: cover;
 	height: 100vh;
 	text-align: center;
+	padding: 42px;
 }
 
 @media (min-width: 1024px) {
 	.wrapper {
-		padding: 42px;
+		padding: 64px;
 		grid-template-columns: 3fr 4fr;
 		grid-template-rows: repeat(auto-fit, 3fr);
 		grid-template-areas:
@@ -32,11 +33,15 @@
 			"footer footer";
 	}
 }
-
+/* ------------------------------ */
 .sidebar {
 	grid-area: sidebar;
 }
 
+.sidebar-header {
+	font-size: 30px;
+}
+/* ------------------------------ */
 .content {
 	grid-area: content;
 	position: relative;
@@ -44,35 +49,46 @@
 	text-align: center;
 }
 
+.content-about-me {
+	text-align: justify;
+	font-size: 18px;
+	padding: 0 20px;
+}
+.content-about-me .emph {
+	color: #42dca3;
+}
+
+/* ------------------------------ */
 .reach {
 	grid-area: reach;
 	text-align: center;
 }
 
+/* ------------------------------ */
+
 .social {
 	grid-area: social;
 }
-
+/* ------------------------------ */
 .footer {
 	grid-area: footer;
-  text-align: center;
-  align-self: top;
+	text-align: center;
+	align-self: top;
+	padding: 50px 0;
 }
 
-/* ---------- */
-img {
-  width: 70%;
-  height: auto;
-  max-width: 40%;
-	border-radius: 50%;
+.footer p {
+	margin: 0;
+	font-size: 10px;
 }
-
-img {
-	padding: 15px;
+::-moz-selection {
+	text-shadow: none;
+	background: #fcfcfc;
+	background: rgba(255, 255, 255, 0.2);
 }
-img::selection {
-	background: 0 0;
+::selection {
+	text-shadow: none;
+	background: #fcfcfc;
+	background: rgba(255, 255, 255, 0.2);
 }
-img::-moz-selection {
-	background: 0 0;
-}
+/* ------------------------------ */
