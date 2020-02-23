@@ -1,65 +1,12 @@
-* {
-	box-sizing: border-box;
-}
-body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #fff;
-	background-color: #000;
-}
-html {
-	width: 100%;
-	height: 100%;
-}
-b,
-strong {
-	font-weight: 700;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 35px 0 35px;
-	text-transform: uppercase;
-	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 1.1;
-}
-p {
-	margin: 0 0 25px;
+.content-about-me {
+	text-align: justify;
 	font-size: 18px;
-	line-height: 1.5;
+	padding: 0 20px;
 }
-@media (min-width: 768px) {
-	p {
-		margin: 0 0 35px;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-}
-a {
+.content-about-me .emph {
 	color: #42dca3;
-	text-decoration: none;
-	background-color: transparent;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
 }
-a:focus,
-a:hover {
-	text-decoration: none;
-	color: #1d9b6c;
-}
-ul {
-	margin-bottom: 10px;
-}
+/* ------------------ */
 .list-inline {
 	padding-left: 0;
 	margin-left: -5px;
@@ -70,98 +17,7 @@ ul {
 	padding-right: 5px;
 	padding-left: 5px;
 }
-.intro {
-	display: table;
-	width: 100%;
-	height: 90%;
-	padding: 100px 0;
-	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-	background-color: #000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-.intro .intro-body {
-	display: table-cell;
-	vertical-align: middle;
-}
-.intro .intro-body .brand-heading {
-	font-size: 30px;
-}
-.intro .intro-body .intro-text {
-	font-size: 18px;
-}
-.intro .intro-body .intro-para {
-	text-align: justify;
-	font-size: 15px;
-	padding: 0 20px;
-}
-.intro .intro-body .intro-para .emph {
-	color: #42dca3;
-}
-@media (min-width: 768px) {
-	.intro {
-		height: 100%;
-		padding: 0;
-	}
-	.intro .intro-body .brand-heading {
-		font-size: 85px;
-	}
-	.intro .intro-body .intro-text {
-		font-size: 26px;
-	}
-	.intro .intro-body .intro-para {
-		font-size: 20px;
-	}
-}
-@-webkit-keyframes pulse {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	50% {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
-@-moz-keyframes pulse {
-	0% {
-		-moz-transform: scale(1);
-		transform: scale(1);
-	}
-	50% {
-		-moz-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	100% {
-		-moz-transform: scale(1);
-		transform: scale(1);
-	}
-}
-.text-center {
-	text-align: center;
-}
-.row {
-	margin-right: -15px;
-	margin-left: -15px;
-}
-.container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-@media (min-width: 767px) {
-	.container {
-		width: 750px;
-	}
-}
+
 ul.banner-social-buttons {
 	margin-top: 0;
 }
@@ -180,36 +36,36 @@ ul.banner-social-buttons {
 		margin-bottom: 0;
 	}
 }
-footer {
-	padding: 50px 0;
+
+/* ------------------ */
+.sidebar-header {
+	font-size: 30px;
 }
-footer p {
-	margin: 0;
-	font-size: 10px;
+
+/* @media (min-width: 768px) {
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
+	.intro .intro-body .brand-heading {
+		font-size: 85px;
+	}
+	.intro .intro-body .intro-text {
+		font-size: 26px;
+	}
+	.intro .intro-body .content-about-me {
+		font-size: 20px;
+	}
+} */
+/* 
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
-::-moz-selection {
-	text-shadow: none;
-	background: #fcfcfc;
-	background: rgba(255, 255, 255, 0.2);
-}
-::selection {
-	text-shadow: none;
-	background: #fcfcfc;
-	background: rgba(255, 255, 255, 0.2);
-}
-.fa-fw {
-	padding-right: 20px;
-	font-size: 45px;
-}
-img {
-	padding: 15px;
-}
-img::selection {
-	background: 0 0;
-}
-img::-moz-selection {
-	background: 0 0;
-}
-body {
-	webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
+@media (min-width: 767px) {
+	.container {
+		width: 750px;
+	}
+} */
