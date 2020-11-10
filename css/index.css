@@ -150,33 +150,3 @@ ul.banner-social-buttons {
 		margin-bottom: 0;
 	}
 }
-
-/* ------------------ */
-
-/* @media (min-width: 768px) {
-	.intro {
-		height: 100%;
-		padding: 0;
-	}
-	.intro .intro-body .brand-heading {
-		font-size: 85px;
-	}
-	.intro .intro-body .intro-text {
-		font-size: 26px;
-	}
-	.intro .intro-body .content-about-me {
-		font-size: 20px;
-	}
-} */
-/* 
-.container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-@media (min-width: 767px) {
-	.container {
-		width: 750px;
-	}
-} */
