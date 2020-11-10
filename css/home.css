@@ -1,10 +1,9 @@
 .wrapper {
 	display: grid;
 	grid-gap: 1rem;
-	grid-template-columns: 1fr;
+	grid-template-columns: 3fr;
 	grid-template-rows: 3fr repeat(auto-fit, 1fr);
 	grid-template-areas:
-		"sidebar"
 		"content"
 		"reach"
 		"social"
@@ -19,34 +18,37 @@
 	height: 100vh;
 	text-align: center;
 	padding: 42px;
+	justify-content: center;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 	.wrapper {
 		padding: 64px;
-		grid-template-columns: 3fr 4fr;
+		grid-template-columns: 1fr;
 		grid-template-rows: repeat(auto-fit, 3fr);
 		grid-template-areas:
-			"sidebar content"
-			"sidebar reach"
-			"sidebar social"
-			"footer footer";
+			"content"
+			"reach"
+			"social"
+			"footer";
 	}
-}
-/* ------------------------------ */
-.sidebar {
-	grid-area: sidebar;
-}
+} */
 
-.sidebar-header {
-	font-size: 30px;
-}
 /* ------------------------------ */
+
 .content {
 	grid-area: content;
 	position: relative;
 	align-self: center;
 	text-align: center;
+}
+
+.content-header {
+	font-size: 30px;
+}
+
+.content-subheader {
+	/* font-size: 30px; */
 }
 
 .content-about-me {
