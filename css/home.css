@@ -8,7 +8,7 @@
 		"social"
 		"footer";
 
-	background: url(../img/bg.jpg) no-repeat bottom center scroll;
+	background: url(../img/bg.webp), url(../img/bg.jpg) no-repeat bottom center scroll;
 	background-color: #444;
 	background-size: cover;
 	-webkit-background-size: cover;
