@@ -47,7 +47,9 @@
 	position: relative;
 	text-align: center;
 	justify-content: center;
+	justify-self: center;
 	align-items: center;
+	max-width: 900px;
 }
 
 .content-header {
