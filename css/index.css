@@ -216,16 +216,39 @@ ul.banner-social-buttons {
 
 /* ------------------------------ */
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.content-about-me .emph {
-    color: var(--color-accent);
+.project {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1em 0;
 }
 
-/* ------------------------------ */
-.reach {
-    grid-area: reach;
-    text-align: center;
+.project-image {
+    width: 300px;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-words {
+    text-align: left;
+    margin-left: 3em;
+    width: 400px;
+}
+
+.project-words p {
+    margin: 0;
 }
 
 /* ------------------------------ */
