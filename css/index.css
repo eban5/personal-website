@@ -2,9 +2,8 @@
     --color-white: #ffffff;
     --color-black: rgb(0, 0, 0);
     --color-background: rgb(20, 33, 61); /* #14213d */
-    /* --color-accent: #42dca3; */
     --color-accent: #fca311;
-    --color-accent-hover: #1d9b6c;
+    --color-accent-hover: #d08203;
     --color-gray: #e5e5e5;
     --bg-img: url(../img/bg.webp), url(../img/bg.jpg);
 }
@@ -25,12 +24,12 @@ body {
     font-size: 1em;
     line-height: 1.42857143;
     color: var(--color-white);
+    background-color: var(--color-background);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 b,
@@ -70,29 +69,38 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: relative;
 }
 a:focus,
 a:hover {
     color: var(--color-accent-hover);
 }
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-accent-hover);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+div.social > ul > li > a:after {
+    display: none;
+}
+
 ul {
     margin-bottom: 10px;
-}
-
-/* ---------- */
-img {
-    width: 70%;
-    height: auto;
-    max-width: 40%;
-    border-radius: 50%;
-    padding: 15px;
-}
-
-img::selection {
-    background: 0 0;
-}
-img::-moz-selection {
-    background: 0 0;
 }
 
 .fa-fw {
@@ -182,6 +190,7 @@ ul.banner-social-buttons {
     justify-self: center;
     align-items: center;
     max-width: 900px;
+    padding: 3em;
 }
 
 .content-header {
@@ -191,20 +200,22 @@ ul.banner-social-buttons {
 .content-about-me {
     text-align: justify;
     max-width: unset;
-    font-size: 18px;
+    font-size: 1em;
     padding: 0 20px;
 }
 
 @media (min-width: 500px) {
     .content-header {
-        font-size: 30px;
+        font-size: 2em;
     }
 }
 
-@media (min-width: 1024px) {
-    .content-about-me {
-        max-width: 75%;
-    }
+.content-about-me .emph {
+    color: var(--color-accent);
+}
+
+/* ------------------------------ */
+
 }
 
 .content-about-me .emph {
