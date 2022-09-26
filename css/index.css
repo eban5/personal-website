@@ -137,6 +137,10 @@ a:after {
     width: 100%;
 }
 
+.content-header {
+    font-size: 2em;
+}
+
 .content-about-me {
     text-align: justify;
     max-width: unset;
